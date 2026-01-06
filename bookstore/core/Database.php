@@ -1,18 +1,12 @@
 <?php
-class Database {
-    private $pdo;
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "bookstore";
 
-    public function __construct() {
-        $this->pdo = new PDO(
-            "mysql:host=".DB_HOST.";dbname=".DB_NAME,
-            DB_USER,
-            DB_PASS
-        );
-    }
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-    public function query($sql, $data = []) {
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute($data);
-        return $stmt;
-    }
+if (!$conn) {
+    die("Database connection failed");
 }
+?>
