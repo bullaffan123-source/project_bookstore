@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+
+.login-sec {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("https://marketplace.canva.com/EAFm9cdFi94/2/0/1600w/canva-bright-cartoon-green-and-brown-school-books-pattern-desktop-wallpaper-4Iwc1WA2mcM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+Image .hero h1 {
+    font-family: "Merriweather", serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* Search box */
+.search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-box button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s;
+}
